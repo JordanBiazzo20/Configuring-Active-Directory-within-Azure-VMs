@@ -3,7 +3,7 @@
 # Lab: Setup Domain Controller in Azure
 
 ## Objective:
-In this lab, you will set up a Windows Server 2022 Domain Controller and a Windows 10 client machine (Client-1) in Azure. This will simulate a small Active Directory network.
+In this lab, I set up a Windows Server 2022 Domain Controller and a Windows 10 client machine (Client-1) in Azure. This simulated a small Active Directory network.
 
 ---
 
