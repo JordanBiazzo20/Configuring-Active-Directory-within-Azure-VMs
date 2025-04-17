@@ -1,5 +1,8 @@
 # Configuring-Active-Directory-within-Azure-VMs
 
+![microsoft-active-directory](https://github.com/user-attachments/assets/57f00506-0518-43b0-be3f-9e4abcd42ead)
+
+
 # Lab: Setup Domain Controller in Azure
 
 ## Objective:
@@ -8,6 +11,8 @@ In this lab, I set up a Windows Server 2022 Domain Controller and a Windows 10 c
 ---
 
 ## Step 1: Create a Resource Group
+
+<img width="600" alt="Screenshot 2025-04-17 at 7 01 17 PM" src="https://github.com/user-attachments/assets/8a1684fd-7c8a-4d5c-8af7-75e74af49548" />
 
 1. In the Azure portal, click on **"Resource groups"** in the left-hand menu.
 2. Click **"Add"** to create a new resource group.
@@ -28,6 +33,9 @@ In this lab, I set up a Windows Server 2022 Domain Controller and a Windows 10 c
 
 ## Step 3: Create the Domain Controller VM (Windows Server 2022)
 
+<img width="600" alt="Screenshot 2025-04-17 at 7 10 33 PM" src="https://github.com/user-attachments/assets/30e05ea4-b236-4068-a40e-ddb27e4bfb4d" />
+
+
 1. Go to **"Virtual Machines"** in the Azure portal and click **"Add"**.
 2. Select the following options:
    - **VM Name:** `DC-1`
@@ -45,6 +53,9 @@ In this lab, I set up a Windows Server 2022 Domain Controller and a Windows 10 c
 
 ## Step 4: Create the Client-1 VM (Windows 10)
 
+<img width="600" alt="Screenshot 2025-04-17 at 7 12 37 PM" src="https://github.com/user-attachments/assets/5290d5e4-4494-46a1-9c6d-a32054c1c7b6" />
+
+
 1. Go to **"Virtual Machines"** in the Azure portal and click **"Add"**.
 2. Select the following options:
    - **VM Name:** `Client-1`
@@ -60,9 +71,15 @@ In this lab, I set up a Windows Server 2022 Domain Controller and a Windows 10 c
 
 ## Step 5: Set DNS for Client-1
 
+<img width="600" alt="Screenshot 2025-04-17 at 7 14 37 PM" src="https://github.com/user-attachments/assets/7f90f7f2-cbb4-48de-a3b0-2bd62066beb3" />
+
+
 1. After the Client-1 VM is created, navigate to the **Networking** tab in the Azure portal.
 2. Set the **DNS servers** for Client-1 to use the **Private IP address of DC-1** (for example, `10.0.0.4`).
 3. Click **"Save"** to apply the settings.
+
+<img width="400" alt="Screenshot 2025-04-17 at 7 16 12 PM" src="https://github.com/user-attachments/assets/d28a5258-d7f8-49f8-b61d-1b83a3143f02" />
+
 
 ---
 
